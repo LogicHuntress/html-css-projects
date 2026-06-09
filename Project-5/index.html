@@ -1,45 +1,85 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Contact Us Form</title>
 
-    <!-- Font Awesome correct CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="app.css">
 
-    <link rel="stylesheet" href="app.css">
-    <title>Login Form</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
 </head>
+
 <body>
 
 <div class="container">
-    <div class="wrapper">
 
-        <div class="title"><span>Login Form</span></div>
+<div class="content">
 
-        <form action="#">
-            <div class="row">
-                <i class="fas fa-user"></i>
-                <input type="text" placeholder="Email or Phone" required>
-            </div>
+<!-- LEFT SIDE -->
+<div class="left-side">
 
-            <div class="row">
-                <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Password" required>
-            </div>
+<div class="address details">
+<i class="fas fa-map-marker-alt"></i>
+<div class="topic">Address</div>
+<div class="text-one">Sundhar, NP12</div>
+<div class="text-two">Birendranagar 06</div>
+</div>
 
-            <div class="pass"><a href="#">Forgot Password?</a></div>
+<div class="phone details">
+<i class="fas fa-phone-alt"></i>
+<div class="topic">Phone</div>
+<div class="text-one">+61 764589213</div>
+<div class="text-two">+61 543678654</div>
+</div>
 
-            <div class="row button">
-                <input type="submit" value="Login">
-            </div>
+<div class="email details">
+<i class="fas fa-envelope"></i>
+<div class="topic">Email</div>
+<div class="text-one">mukeshchella@234.com</div>
+<div class="text-two">yashwanthkasarla@gmail.com</div>
+</div>
 
-            <div class="signup-link">
-                Not a member? <a href="#">Signup now</a>
-            </div>
+</div>
 
-        </form>
-    </div>
+
+<!-- RIGHT SIDE -->
+
+<div class="right-side">
+
+<div class="topic-text">Send us a message</div>
+
+<p>
+If you have any work from me or any types of queries related to my
+content, you can send me a message from here. It's my pleasure to help you.
+</p>
+
+<form action="#">
+
+<div class="input-box">
+<input type="text" placeholder="Enter your name" required>
+</div>
+
+<div class="input-box">
+<input type="email" placeholder="Enter your email" required>
+</div>
+
+<div class="input-box message-box">
+<textarea placeholder="Enter your message"></textarea>
+</div>
+
+<div class="button">
+<input type="submit" value="Send Now">
+</div>
+
+</form>
+
+</div>
+
+</div>
 </div>
 
 </body>

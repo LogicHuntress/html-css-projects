@@ -1,79 +1,124 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
+    font-family: Century;
 
-body {
+}
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/cool-1.jpg);
     height: 100vh;
-    width: 100%;
-    background-color: #FF6760;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+
+}
+ul {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 400px;
+    margin-right: 60px;
+    font-size: 16px;
+}
+ul li{
+    display: inline-block;
 }
 
-/* Container */
-.Box {
-    max-width: 400px;
-    width: 100%;
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+}
+ul li a:hover{
+    background-color: white;
+    color: black;
+
+}
+ul li.active a{
+    background-color: white;
+    color: black;
 }
 
-/* ❌ .Box.Search-Box  (wrong — means same element has both classes)
-   ✅ .Box .Search-Box (correct — Search-Box inside Box) */
-.Box .Search-Box {
-    height: 50px;
-    position: relative;
-    max-width: 50px;
+.logo{
+    color:#d4a45f;
+    font-size:30px;
+}
+
+.logo i{
+    font-size:35px;
+    margin-right:5px;
+}
+
+.logo h2{
+    color:white;
+    font-size:35px;
+}
+.main {
+    max-width: 1200px;
     margin: auto;
-    background: red;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
-    transition: all 0.3s ease; /* ❌ 0,3s → ✅ 0.3s */
-}
 
-/* Expand when checkbox checked */
-#check:checked ~ .Search-Box {
-    max-width: 380px;
 }
-
-.Search-Box input {
+.title {
     position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 25px;
-    background: #fff;
-    outline: none;
-    border: none;
-    padding-left: 20px;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title h1{
+    color: #fff;
+    font-size: 70px;
+    
+}
+.button{
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn{
+    border: 1px solid #fff;
+    padding: 5px 20px;
+    color: #fff;
+    transition: 0.5 ease;
     font-size: 18px;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: #fff;
+    color: black;
 }
 
-.Search-Box .icon {
-    position: absolute;
-    right: -2px;
-    top: 0;
-    width: 50px;
-    height: 100%;
-    background: #FF6760;
-    text-align: center;
-    line-height: 50px;
-    color: #fff;
-    font-size: 20px;
-    border-radius: 25px;
-}
-
-#check:checked ~ .Search-Box .icon {
-    background: #FF6760;
-    color: #fff;
-    width: 60px;
-    border-radius: 0 25px 25px 0;
-}
-
-#check {
+.sub-menu {
     display: none;
+    top: 6%;
+    position:relative ;
 }
+.sub-menu ul{
+    position: absolute;
+
+}
+
+.main ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: rgba(0,45,117);
+    margin-top: 12px;
+    margin-left: -8px;
+}
+.main ul li:hover .sub-menu ul {
+    display: block;
+    margin: 6px;
+
+}
+.main ul li:hover .sub-menu ul li{
+    width: 75px;
+    padding: 5px;
+    border-radius: 1px #fff;
+    background: transparent;
+    transition: 0.4 ease;
+    text-align: left;
+    border-radius: 0px;
+}
+
